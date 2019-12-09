@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.8)
+project(project_LichModsGuardianFix)
+add_subdirectory(cwmods)
+add_library (LichModsGuardianFix SHARED "main.cpp")
+target_link_libraries (LichModsGuardianFix LINK_PUBLIC CWSDK)
